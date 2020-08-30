@@ -3,3 +3,38 @@
 print("Hello World")
 my_message ="This is pythonn basics"
 print(my_message)
+
+price ="$1200"
+print("stock price of company xyz is " +price)
+
+#id is used for memory location of variable
+print(id(price))
+
+#INDEXING of variable
+name = "Indexing of Variable"
+print("index 0 value is " +name[0])
+
+#negative indexing for last index of a variable
+print("last index value is "+ name[-1])
+
+#Strings are immutable in python , to change value you must re assign
+# name[-1] = "E"  #TypeError: 'str' object does not support item assignment
+
+# name[9] ="O"  #TypeError: 'str' object does not support item assignment
+print(name)
+
+#SLICING with python  variablName[START_INDEX : END_INDEX+1(or EMPTY for entire String)]
+print("slicing from 0 to index 4 :: " +name[0:5])
+
+#slicing show entire string
+print("Slicing from begining to end of variable :: "+ name[0:])
+
+#SLICING WITH STEP SIZE variablName[START_INDEX : END_INDEX+1 : STEP__SIZE]
+nums = "0123456789"
+print("Slicing with step of 2 :: " + nums[0::2])
+
+#slicing in reverse order by 1
+print("slicing in reverse order by steep 1 :: "+ nums[::-1])
+
+#slicing in reverse order by 3
+print("slicing in reverse order by steep 1 :: "+ nums[::-3])
