@@ -1,3 +1,5 @@
+import string #importing string modules
+
 #start of python
 
 print("Hello World")
@@ -38,3 +40,41 @@ print("slicing in reverse order by steep 1 :: "+ nums[::-1])
 
 #slicing in reverse order by 3
 print("slicing in reverse order by steep 1 :: "+ nums[::-3])
+
+
+#len() : number of character in the string
+mesg = "hEllo" 
+print("length of msg is ")
+print(len(mesg))
+
+#len() counts white spaces as well
+msg1 = "hello  " 
+print("length of msg is ")
+print(len(msg1))
+
+#Type of string
+print(type(mesg))
+print(type(len(mesg)))
+
+
+#Capitalize() makes the first letter capital
+print("Capitalize mesg " +msg1.capitalize()+ "with length " , len(msg1))
+
+#Upper case lowe case
+print("upper case ", mesg.upper() , " lower case " ,mesg.lower())
+
+#Stripping msg of extra spaces
+print(msg1.strip())
+print(msg1.strip().upper())
+
+#Splitting a string b character
+meessage = "HI-My-name-Chelsea-fc,We are the king of London."
+print(meessage.split("-"))
+
+#Join cobines a list into a String
+meessage = "HI-My-name-Chelsea-fc,We are the king of London."
+print(meessage.split("-"))
+print( " ".join(meessage.split("-")))
+
+
+print("From Imported string module asccii lower case method " ,string.ascii_lowercase)
