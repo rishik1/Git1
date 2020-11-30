@@ -3,7 +3,7 @@
 secret='password'
 pw =''
 
-animals ={'bear','bunny','dog','cat','velero'};
+animals ={'bear','bunny','dog','cat','velero'}
 
 
 for pet in animals:
@@ -26,3 +26,16 @@ while passcode != pw:
         break
 else:
     print("you are auhtorized ....")
+
+
+for pet in animals:
+    if pet == 'dog':
+        print("My fav animal... ")
+    
+    if pet == 'bear' :
+        print("Run for life .....")
+        break
+    
+    print("name of animal "+ pet)
+else:
+    print(" reach all animals in Zooo ")
